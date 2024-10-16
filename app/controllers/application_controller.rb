@@ -2,7 +2,7 @@
 
 require 'jwt'
 class ApplicationController < ActionController::API
-  SECRET_KEY = ENV['JWT_SECRET'] || 'your_secret_key'
+  SECRET_KEY = ENV['JWT_SECRET'] || 'secret'
 
   def encode_token(payload)
     JWT.encode(payload, SECRET_KEY)

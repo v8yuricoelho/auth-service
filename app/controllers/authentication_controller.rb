@@ -5,7 +5,8 @@ class AuthenticationController < ApplicationController
     user = User.new(email: params[:email], password: params[:password])
 
     if user.save
-      token = encode_token(user_id: user.id)
+      exp = Time.now.to_i + 24 * 3600
+      token = encode_token(user_id: user.id, exp: exp)
       render json: { token: token }, status: :created
     else
       render json: { error: user.errors.full_messages }, status: :unprocessable_entity
