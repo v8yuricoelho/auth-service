@@ -7,10 +7,4 @@ class ApplicationController < ActionController::API
   def encode_token(payload)
     JWT.encode(payload, SECRET_KEY)
   end
-
-  def decode_token(token)
-    JWT.decode(token, SECRET_KEY)[0]
-  rescue JWT::DecodeError
-    nil
-  end
 end
