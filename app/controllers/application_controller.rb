@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'jwt'
+
 class ApplicationController < ActionController::API
   SECRET_KEY = ENV['JWT_SECRET'] || 'secret'
 
