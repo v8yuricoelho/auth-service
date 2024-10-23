@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   post 'auth/login', to: 'authentication#login'
   post 'auth/register', to: 'authentication#register'
+  
+  resources :users, only: [:show]
 end
