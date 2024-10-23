@@ -56,7 +56,7 @@ The **Auth Service** is responsible for user authentication in the Task Manager 
 5. Start the server:
 
    ```bash
-   rails server
+   rails server -p 3001
    ```
 
 ## Endpoints
