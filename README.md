@@ -78,5 +78,3 @@ rspec
 - [Task Manager](https://github.com/v8yuricoelho/task-manager)
 - [Scrape Service](https://github.com/v8yuricoelho/scrape-service)
 - [Notification Service](https://github.com/v8yuricoelho/notification-service)
-
-* ...
